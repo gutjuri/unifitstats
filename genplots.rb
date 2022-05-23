@@ -23,7 +23,7 @@ class Gruff::Base
     @circle_radius = 2.0
     @marker_font_size = 10
 
-    @font = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+    @font = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf' 
 
     #enable_vertical_line_markers = true
     #y_axis_increment = 1
@@ -63,6 +63,9 @@ graph.maximum_value = 25
 graph.minimum_value = 0.0
 graph.x_axis_label = "Time of day"
 graph.y_axis_label = "Average visitors"
-graph.write('plots/graph.png')
+theme = Gruff::Themes::KEYNOTE
+theme[:background_colors] = '#2E3436'
+graph.theme = theme
+graph.write('plots/unifitstats.png')
 
 puts 'Finished.'
