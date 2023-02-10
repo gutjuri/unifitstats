@@ -1,7 +1,6 @@
-
 #!/bin/bash
 
-# docker build -t ffanalyse .
+# docker build -t unifitstats .
 
 docker run --rm -t \
     -v "$(pwd)":/app \
