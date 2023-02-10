@@ -64,7 +64,7 @@ graph.minimum_value = 0.0
 graph.x_axis_label = "Time of day"
 graph.y_axis_label = "Average visitors"
 theme = Gruff::Themes::KEYNOTE
-theme[:background_colors] = '#2E3436'
+#theme[:background_colors] = '#2E3436'
 graph.theme = theme
 graph.write('plots/unifitstats.png')
 
